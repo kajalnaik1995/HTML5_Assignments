@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment_3_Awesome_Online_videos
+        </title>
+        <style>
+        h1{
+            text-align: center;
+            font-size: 100px;
+        }
+
+        video {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 480px;
+            }
+            button {
+                background: #3297b7;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 0 10px;
+                align-items: center;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+            <h1>Awesome Online Videos</h1>
+            <img src="Images/logo.png" alt="Awesome online videos image" width="1500">
+            <video id="video" width="480">
+                <source src="Images/Around the World in 80 Clips.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="play()">Play Video</button>
+            <button onclick="pause()">Pause Video</button>
+            
+
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
